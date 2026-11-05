@@ -85,9 +85,9 @@ O MaquinAgro busca contribuir para um cenário em que pequenos produtores tenham
 
 <p align="center">
   Desenvolvido com 💚 pela equipe 404 Team Not Found
+    Victor Biazzin Rubinho
     Liedson Fernando Chapiewsky 
  		Arthur de Laurentiz Mendes 
-    Victor Biazzin Rubinho
     Lucas Pereira Martins 
     Kauê Sequeira C. de Oliveira.
 </p>
