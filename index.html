@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#193d2d">
+    <meta name="description" content="Alugue máquinas agrícolas perto de você. Conectamos pequenos produtores a tratores, colheitadeiras e implementos disponíveis na sua região.">
+    <title>MaquinAgro — Aluguel de máquinas agrícolas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="#inicio" aria-label="MaquinAgro, página inicial">
+                <img src="./img/icone-logo.png" alt="">
+                <span>Maquin<span class="brand-accent">Agro</span></span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Navegação principal">
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#maquinas">Máquinas</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#contato">Contato</a>
+                <a class="button button-green button-small" href="#contato">Entrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
+                <div class="hero-copy">
+                    <span class="eyebrow eyebrow-yellow">Aluguel de máquinas agrícolas</span>
+                    <h1>A máquina certa para sua lavoura, sem precisar comprar.</h1>
+                    <p>Conectamos pequenos produtores a tratores, colheitadeiras e implementos disponíveis na sua região. Alugue por dia, pague só pelo que usar.</p>
+                    <div class="hero-actions">
+                        <a class="button button-yellow" href="#maquinas">Ver máquinas</a>
+                        <a class="button button-outline" href="#como-funciona">Como funciona</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="./img/trator-trabalhando.jpg" alt="Trator trabalhando no campo">
+                </div>
+            </div>
+        </section>
+
+        <section class="section how-section" id="como-funciona">
+            <div class="container">
+                <div class="section-heading centered">
+                    <h2>Como funciona</h2>
+                    <p>Três passos entre você e a máquina que sua safra precisa.</p>
+                </div>
+                <div class="steps-grid">
+                    <article class="step-card">
+                        <span class="step-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="5.6"></circle><path d="m15 15 4 4"></path></svg>
+                        </span>
+                        <span class="step-label">Passo 1</span>
+                        <h3>Busque a máquina</h3>
+                        <p>Filtre por tipo, região e data. Veja fotos, preço por dia e avaliações do dono.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="15" rx="2"></rect><path d="M8 3.5v4M16 3.5v4M4 10h16"></path></svg>
+                        </span>
+                        <span class="step-label">Passo 2</span>
+                        <h3>Reserve as datas</h3>
+                        <p>Escolha os dias de uso e confirme a reserva direto pela plataforma.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>
+                        </span>
+                        <span class="step-label">Passo 3</span>
+                        <h3>Use e devolva</h3>
+                        <p>Retire a máquina, trabalhe na sua terra e devolva no prazo combinado.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section machines-section" id="maquinas">
+            <div class="container">
+                <div class="section-heading section-heading-row">
+                    <div>
+                        <h2>Máquinas em destaque</h2>
+                        <p>Disponíveis perto de você esta semana.</p>
+                    </div>
+                    <a class="text-link" href="#contato">Ver todas <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="machines-grid">
+                    <article class="machine-card">
+                        <div class="machine-visual tractor-visual">
+                            <img src="./img/trator-75cv.jpg" alt="Trator de 75 cv disponível para aluguel" loading="lazy">
+                        </div>
+                        <div class="machine-info">
+                            <span class="machine-type">Trator</span>
+                            <h3>Trator 75 cv</h3>
+                            <p class="machine-location">[Cidade - UF]</p>
+                            <div class="machine-footer">
+                                <p><strong>[R$ 000]</strong> / dia</p>
+                                <a class="button button-green button-small" href="#contato">Alugar</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="machine-card">
+                        <div class="machine-visual harvester-visual">
+                            <img src="./img/colheitadeira.jpg" alt="Colheitadeira de grãos disponível para aluguel" loading="lazy">
+                        </div>
+                        <div class="machine-info">
+                            <span class="machine-type">Colheitadeira</span>
+                            <h3>Colheitadeira de grãos</h3>
+                            <p class="machine-location">[Cidade - UF]</p>
+                            <div class="machine-footer">
+                                <p><strong>[R$ 000]</strong> / dia</p>
+                                <a class="button button-green button-small" href="#contato">Alugar</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="machine-card">
+                        <div class="machine-visual planter-visual">
+                            <img src="./img/plantadeira.jpg" alt="Plantadeira de cinco linhas disponível para aluguel" loading="lazy">
+                        </div>
+                        <div class="machine-info">
+                            <span class="machine-type">Implemento</span>
+                            <h3>Plantadeira 5 linhas</h3>
+                            <p class="machine-location">[Cidade - UF]</p>
+                            <div class="machine-footer">
+                                <p><strong>[R$ 000]</strong> / dia</p>
+                                <a class="button button-green button-small" href="#contato">Alugar</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section purpose-section" id="sobre">
+            <div class="container">
+                <div class="purpose-content">
+                    <div class="purpose-copy">
+                        <span class="eyebrow eyebrow-green">Nosso propósito</span>
+                        <h2>Mais produtividade para quem produz o alimento do país.</h2>
+                        <p>A MaquinAgro nasceu alinhada à ODS 2.3 da ONU: aumentar a produtividade e a renda dos pequenos produtores de alimentos. Máquina parada no galpão de um vira trabalho na terra de outro.</p>
+                    </div>
+                    <div class="benefits-grid">
+                        <article class="benefit-card">
+                            <h3>Sem investimento alto</h3>
+                            <p>Use máquinas modernas sem financiar uma compra.</p>
+                        </article>
+                        <article class="benefit-card">
+                            <h3>Renda extra para donos</h3>
+                            <p>Quem tem máquina ociosa ganha alugando.</p>
+                        </article>
+                        <article class="benefit-card">
+                            <h3>Perto de você</h3>
+                            <p>Busca por região reduz frete e tempo de espera.</p>
+                        </article>
+                        <article class="benefit-card">
+                            <h3>Reserva simples</h3>
+                            <p>Tudo pelo celular, do pedido à devolução.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="owner-cta" id="cadastro-maquina">
+                    <div>
+                        <h2>Tem uma máquina parada?</h2>
+                        <p>Cadastre seu equipamento e comece a alugar.</p>
+                    </div>
+                    <a class="button button-green" href="#contato">Cadastrar máquina</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contato">
+            <div class="container contact-content">
+                <div class="section-heading contact-heading">
+                    <span class="eyebrow eyebrow-green">Estamos aqui para ajudar</span>
+                    <h2>Fale conosco</h2>
+                    <p>Envie sua dúvida ou mensagem. Nossa equipe terá prazer em conversar com você.</p>
+                </div>
+                <form class="contact-form" action="#" method="get">
+                    <div class="form-field">
+                        <label for="contact-name">Nome</label>
+                        <input id="contact-name" type="text" autocomplete="name" maxlength="100" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="contact-phone">Telefone</label>
+                        <input id="contact-phone" type="tel" autocomplete="tel" maxlength="30" required>
+                    </div>
+                    <div class="form-field form-field-full">
+                        <label for="contact-email">E-mail</label>
+                        <input id="contact-email" type="email" autocomplete="email" maxlength="254" required>
+                    </div>
+                    <div class="form-field form-field-full">
+                        <label for="contact-message">Mensagem</label>
+                        <textarea id="contact-message" rows="5" maxlength="2000" required></textarea>
+                    </div>
+                    <div class="contact-form-actions form-field-full">
+                        <p>Esta demonstração acadêmica recarrega a página, mas não transmite os dados.</p>
+                        <button class="button button-green" type="submit">Enviar mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-about">
+                <a class="footer-brand" href="#inicio">MaquinAgro</a>
+                <p>Aluguel de máquinas agrícolas para pequenos produtores.</p>
+            </div>
+            <div class="footer-column">
+                <h2>Plataforma</h2>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#maquinas">Máquinas</a>
+            </div>
+            <div class="footer-column">
+                <h2>Contato</h2>
+                <a href="mailto:email@maquinagro.com">email@maquinagro.com</a>
+                <a href="tel:+5500000000000">(00) 0000-0000</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 MaquinAgro — Projeto acadêmico FIAP</p>
+        </div>
+    </footer>
+</body>
+</html>
