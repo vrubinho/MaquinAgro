@@ -47,7 +47,7 @@ O projeto faz parte do desafio acadêmico **FIAP Agrotech**, alinhado ao Objetiv
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/LiedsonF/MaquinAgro.git
+   git clone https://github.com/vrubinho/MaquinAgro.git
    ```
 
 2. Entre na pasta:
