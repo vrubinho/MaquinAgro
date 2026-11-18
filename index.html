@@ -142,6 +142,295 @@
             </div>
         </section>
 
+        <section class="catalog-section" id="catalogo">
+
+            <div class="container">
+
+                <div class="catalog-banner">
+                    <div class="catalog-banner-content">
+                        <span>MAQUINAGRO • CATÁLOGO</span>
+                        <h2>Encontre a máquina ideal para sua lavoura.</h2>
+                        <p>
+                            Escolha a máquina e reserve os dias de uso.
+                            Filtre por tipo, região e data. O preço é por dia
+                            e você paga só pelo que usar.
+                        </p>
+                    </div>
+                    <img src="img/icone-logo.png" alt="Logo MaquinAgro">
+                </div>
+
+                <div class="catalog-categories">
+                    <button class="catalog-category active" type="button">
+                        Todas <span>3</span>
+                    </button>
+
+                    <button class="catalog-category" type="button">
+                        Tratores <span>1</span>
+                    </button>
+
+                    <button class="catalog-category" type="button">
+                        Colheitadeiras <span>1</span>
+                    </button>
+
+                    <button class="catalog-category" type="button">
+                        Plantadeira <span>1</span>
+                    </button>
+                </div>
+
+                <div class="catalog-filters">
+                    <div class="catalog-filter">
+                        <label for="catalog-class">Classe do trator</label>
+                        <select id="catalog-class">
+                            <option>Todas</option>
+                            <option>Classe 1</option>
+                            <option>Classe 2</option>
+                            <option>Classe 3</option>
+                        </select>
+                    </div>
+
+                    <div class="catalog-filter">
+                        <label for="catalog-state">Estado</label>
+                        <select id="catalog-state">
+                            <option>Todos</option>
+                            <option>RS</option>
+                            <option>SC</option>
+                            <option>PR</option>
+                            <option>GO</option>
+                        </select>
+                    </div>
+
+                    <div class="catalog-filter">
+                        <label for="catalog-start">Retirada</label>
+                        <input id="catalog-start" type="date">
+                    </div>
+
+                    <div class="catalog-filter">
+                        <label for="catalog-end">Devolução</label>
+                        <input id="catalog-end" type="date">
+                    </div>
+
+                    <div class="catalog-filter catalog-search">
+                        <label for="catalog-search">Buscar máquina</label>
+                        <input
+                            id="catalog-search"
+                            type="search"
+                            placeholder="Ex.: plantadeira"
+                        >
+                    </div>
+
+                    <button class="catalog-search-button" type="button">
+                        Buscar
+                    </button>
+                </div>
+
+                <div class="catalog-results-heading">
+                    <div>
+                        <span class="catalog-eyebrow">Explore as opções</span>
+                        <h2>Máquinas disponíveis</h2>
+                    </div>
+
+                    <span class="catalog-count">8 máquinas</span>
+                </div>
+
+                <div class="catalog-grid">
+
+                    <article class="catalog-card">
+                        <div class="catalog-image">
+                            <img src="./img/trator-75cv.jpg"
+                                alt="Trator de 75 cavalos">
+                            <span class="catalog-status">Disponível esta semana</span>
+                        </div>
+
+                        <div class="catalog-card-content">
+                            <div class="catalog-card-top">
+                                <span class="catalog-type">Trator</span>
+                                <span class="catalog-class">Classe 2 · 75 cv</span>
+                            </div>
+
+                            <h3>Trator 75 cv</h3>
+                            <p class="catalog-location">Passo Fundo - RS · 2019</p>
+
+                            <div class="catalog-rating">
+                                <span>★ 4.9</span>
+                                <span>(32 avaliações)</span>
+                            </div>
+
+                            <div class="catalog-owner">
+                                <span class="owner-avatar">C</span>
+                                <span>Carlos M.</span>
+                            </div>
+
+                            <div class="catalog-card-footer">
+                                <p><strong>R$ 420,00</strong> / dia</p>
+                                <a href="#contato" class="catalog-rent-button">Alugar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="catalog-card">
+                        <div class="catalog-image">
+                            <img src="./img/colheitadeira.jpg"
+                                alt="Colheitadeira de grãos">
+                            <span class="catalog-status">Disponível esta semana</span>
+                        </div>
+
+                        <div class="catalog-card-content">
+                            <div class="catalog-card-top">
+                                <span class="catalog-type">Colheitadeira</span>
+                            </div>
+
+                            <h3>Colheitadeira de grãos</h3>
+                            <p class="catalog-location">Cascavel - PR · 2017</p>
+
+                            <div class="catalog-rating">
+                                <span>★ 4.8</span>
+                                <span>(14 avaliações)</span>
+                            </div>
+
+                            <div class="catalog-owner">
+                                <span class="owner-avatar">C</span>
+                                <span>Coop. Planalto</span>
+                            </div>
+
+                            <div class="catalog-card-footer">
+                                <p><strong>R$ 1.800,00</strong> / dia</p>
+                                <a href="#contato" class="catalog-rent-button">Alugar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="catalog-card">
+                        <div class="catalog-image">
+                            <img src="./img/plantadeira.jpg"
+                                alt="Plantadeira de cinco linhas">
+                            <span class="catalog-status catalog-status-warning">Agenda quase cheia</span>
+                        </div>
+
+                        <div class="catalog-card-content">
+                            <div class="catalog-card-top">
+                                <span class="catalog-type">Implemento</span>
+                            </div>
+
+                            <h3>Plantadeira 5 linhas</h3>
+                            <p class="catalog-location">Erechim - RS · 2021</p>
+
+                            <div class="catalog-rating">
+                                <span>★ 4.7</span>
+                                <span>(21 avaliações)</span>
+                            </div>
+
+                            <div class="catalog-owner">
+                                <span class="owner-avatar">A</span>
+                                <span>Ana P.</span>
+                            </div>
+
+                            <div class="catalog-card-footer">
+                                <p><strong>R$ 260,00</strong> / dia</p>
+                                <a href="#contato" class="catalog-rent-button">Alugar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="catalog-card">
+                        <div class="catalog-image">
+                            <img src="./img/trator-40cv.jpg"
+                                alt="Trator de 40 cavalos">
+                            <span class="catalog-status">Disponível esta semana</span>
+                        </div>
+
+                        <div class="catalog-card-content">
+                            <div class="catalog-card-top">
+                                <span class="catalog-type">Trator</span>
+                                <span class="catalog-class">Classe 1 · 40 cv</span>
+                            </div>
+
+                            <h3>Trator 40 cv</h3>
+                            <p class="catalog-location">Nova Petrópolis - RS · 2020</p>
+
+                            <div class="catalog-rating">
+                                <span>★ 5.0</span>
+                                <span>(9 avaliações)</span>
+                            </div>
+
+                            <div class="catalog-owner">
+                                <span class="owner-avatar">S</span>
+                                <span>Sítio Boa Vista</span>
+                            </div>
+
+                            <div class="catalog-card-footer">
+                                <p><strong>R$ 300,00</strong> / dia</p>
+                                <a href="#contato" class="catalog-rent-button">Alugar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="catalog-card">
+                        <div class="catalog-image">
+                            <img src="./img/trator-130cv.jpg"
+                                alt="Trator de 130 cavalos">
+                            <span class="catalog-status">Disponível esta semana</span>
+                        </div>
+
+                        <div class="catalog-card-content">
+                            <div class="catalog-card-top">
+                                <span class="catalog-type">Trator</span>
+                                <span class="catalog-class">Classe 3 · 130 cv</span>
+                            </div>
+
+                            <h3>Trator 130 cv</h3>
+                            <p class="catalog-location">Rio Verde - GO · 2018</p>
+
+                            <div class="catalog-rating">
+                                <span>★ 4.6</span>
+                                <span>(18 avaliações)</span>
+                            </div>
+
+                            <div class="catalog-owner">
+                                <span class="owner-avatar">F</span>
+                                <span>Fazenda Rio Claro</span>
+                            </div>
+
+                            <div class="catalog-card-footer">
+                                <p><strong>R$ 780,00</strong> / dia</p>
+                                <a href="#contato" class="catalog-rent-button">Alugar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="catalog-card">
+                        <div class="catalog-image">
+                            <img src="./img/pulverizador.jpg"
+                                alt="Pulverizador agrícola de 600 litros">
+                            <span class="catalog-status">Disponível esta semana</span>
+                        </div>
+
+                        <div class="catalog-card-content">
+                            <div class="catalog-card-top">
+                                <span class="catalog-type">Implemento</span>
+                            </div>
+
+                            <h3>Pulverizador 600 L</h3>
+                            <p class="catalog-location">Chapecó - SC · 2022</p>
+
+                            <div class="catalog-rating">
+                                <span>★ 4.5</span>
+                                <span>(11 avaliações)</span>
+                            </div>
+
+                            <div class="catalog-owner">
+                                <span class="owner-avatar">J</span>
+                                <span>João T.</span>
+                            </div>
+
+                            <div class="catalog-card-footer">
+                                <p><strong>R$ 190,00</strong> / dia</p>
+                                <a href="#contato" class="catalog-rent-button">Alugar</a>
+                            </div>
+                        </div>
+                    </article>
+
+        </section>
+
         <section class="section purpose-section" id="sobre">
             <div class="container">
                 <div class="purpose-content">
