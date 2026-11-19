@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#193d2d">
-    <meta name="description" content="Alugue máquinas agrícolas perto de você. Conectamos pequenos produtores a tratores, colheitadeiras e implementos disponíveis na sua região.">
+    <meta name="description"
+        content="Alugue máquinas agrícolas perto de você. Conectamos pequenos produtores a tratores, colheitadeiras e implementos disponíveis na sua região.">
     <title>MaquinAgro — Aluguel de máquinas agrícolas</title>
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/index.js" defer></script>
 </head>
+
 <body>
     <header class="site-header">
         <div class="container header-content">
@@ -17,19 +20,27 @@
                 <span>Maquin<span class="brand-accent">Agro</span></span>
             </a>
 
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="header-box-btn">
+                <button type="button" class="mode-toggle" aria-label="dark-mode" aria-pressed="false">
+                   <img class="icone-lua" src="./img/icone-lua.svg" alt="Dark Mode">
+                   <img class="icone-sol" src="./img/icone-sol.svg" alt="Ligth Mode">
+                </button>
 
-            <nav class="primary-navigation" id="primary-navigation" aria-label="Navegação principal">
-                <a href="https://youtu.be/0E3BLvrNsoM">Pitch Video</a>
-                <a href="#maquinas">Máquinas</a>
-                <a href="#sobre">Sobre nós</a>
-                <a href="#contato">Contato</a>
-                <a class="button button-green button-small" href="#contato">Entrar</a>
-            </nav>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"
+                    aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="primary-navigation" id="primary-navigation" aria-label="Navegação principal">
+                    <a href="https://youtu.be/0E3BLvrNsoM">Pitch Video</a>
+                    <a href="#maquinas">Máquinas</a>
+                    <a href="#sobre">Sobre nós</a>
+                    <a href="#contato">Contato</a>
+                    <a class="button button-green button-small" href="#contato">Entrar</a>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -39,7 +50,8 @@
                 <div class="hero-copy">
                     <span class="eyebrow eyebrow-yellow">Aluguel de máquinas agrícolas</span>
                     <h1>A máquina certa para sua lavoura, sem precisar comprar.</h1>
-                    <p>Conectamos pequenos produtores a tratores, colheitadeiras e implementos disponíveis na sua região. Alugue por dia, pague só pelo que usar.</p>
+                    <p>Conectamos pequenos produtores a tratores, colheitadeiras e implementos disponíveis na sua
+                        região. Alugue por dia, pague só pelo que usar.</p>
                     <div class="hero-actions">
                         <a class="button button-yellow" href="#maquinas">Ver máquinas</a>
                         <a class="button button-outline" href="#como-funciona">Como funciona</a>
@@ -60,7 +72,10 @@
                 <div class="steps-grid">
                     <article class="step-card">
                         <span class="step-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="5.6"></circle><path d="m15 15 4 4"></path></svg>
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="10.8" cy="10.8" r="5.6"></circle>
+                                <path d="m15 15 4 4"></path>
+                            </svg>
                         </span>
                         <span class="step-label">Passo 1</span>
                         <h3>Busque a máquina</h3>
@@ -68,7 +83,10 @@
                     </article>
                     <article class="step-card">
                         <span class="step-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="15" rx="2"></rect><path d="M8 3.5v4M16 3.5v4M4 10h16"></path></svg>
+                            <svg viewBox="0 0 24 24">
+                                <rect x="4" y="5.5" width="16" height="15" rx="2"></rect>
+                                <path d="M8 3.5v4M16 3.5v4M4 10h16"></path>
+                            </svg>
                         </span>
                         <span class="step-label">Passo 2</span>
                         <h3>Reserve as datas</h3>
@@ -76,7 +94,9 @@
                     </article>
                     <article class="step-card">
                         <span class="step-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>
+                            <svg viewBox="0 0 24 24">
+                                <path d="m5 12.5 4.5 4.5L19 7.5"></path>
+                            </svg>
                         </span>
                         <span class="step-label">Passo 3</span>
                         <h3>Use e devolva</h3>
@@ -98,7 +118,8 @@
                 <div class="machines-grid">
                     <article class="machine-card">
                         <div class="machine-visual tractor-visual">
-                            <img src="./img/trator-75cv.jpg" alt="Trator de 75 cv disponível para aluguel" loading="lazy">
+                            <img src="./img/trator-75cv.jpg" alt="Trator de 75 cv disponível para aluguel"
+                                loading="lazy">
                         </div>
                         <div class="machine-info">
                             <span class="machine-type">Trator</span>
@@ -112,7 +133,8 @@
                     </article>
                     <article class="machine-card">
                         <div class="machine-visual harvester-visual">
-                            <img src="./img/colheitadeira.jpg" alt="Colheitadeira de grãos disponível para aluguel" loading="lazy">
+                            <img src="./img/colheitadeira.jpg" alt="Colheitadeira de grãos disponível para aluguel"
+                                loading="lazy">
                         </div>
                         <div class="machine-info">
                             <span class="machine-type">Colheitadeira</span>
@@ -126,7 +148,8 @@
                     </article>
                     <article class="machine-card">
                         <div class="machine-visual planter-visual">
-                            <img src="./img/plantadeira.jpg" alt="Plantadeira de cinco linhas disponível para aluguel" loading="lazy">
+                            <img src="./img/plantadeira.jpg" alt="Plantadeira de cinco linhas disponível para aluguel"
+                                loading="lazy">
                         </div>
                         <div class="machine-info">
                             <span class="machine-type">Implemento</span>
@@ -148,7 +171,10 @@
                     <div class="purpose-copy">
                         <span class="eyebrow eyebrow-green">Nosso propósito</span>
                         <h2>Mais produtividade para quem produz o alimento do país.</h2>
-                        <p>A MaquinAgro nasceu alinhada à ODS 2.3 da ONU: aumentar a produtividade e a renda dos pequenos produtores de alimentos. Máquina parada no galpão de um vira trabalho na terra de outro. Se interessou? <u style="text-decoration: underline;">Saiba mais <a href="https://youtu.be/7cBKXqhU9ho">aqui!</a></u></p>
+                        <p>A MaquinAgro nasceu alinhada à ODS 2.3 da ONU: aumentar a produtividade e a renda dos
+                            pequenos produtores de alimentos. Máquina parada no galpão de um vira trabalho na terra de
+                            outro. Se interessou? <u style="text-decoration: underline;">Saiba mais <a
+                                    href="https://youtu.be/7cBKXqhU9ho">aqui!</a></u></p>
                     </div>
                     <div class="benefits-grid">
                         <article class="benefit-card">
@@ -196,7 +222,8 @@
                     </div>
                     <div class="form-field">
                         <label for="contact-phone">Telefone</label>
-                        <input id="contact-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9]+" title="Informe apenas números." required>
+                        <input id="contact-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9]+"
+                            title="Informe apenas números." required>
                     </div>
                     <div class="form-field form-field-full">
                         <label for="contact-email">E-mail</label>
@@ -206,7 +233,8 @@
                     <div class="form-field form-field-full">
                         <label for="contact-message">Mensagem</label>
                         <textarea id="contact-message" name="message" rows="5" maxlength="500"
-                            title="A mensagem não pode ficar em branco e deve ter no máximo 500 caracteres." required></textarea>
+                            title="A mensagem não pode ficar em branco e deve ter no máximo 500 caracteres."
+                            required></textarea>
                     </div>
                     <div class="contact-form-actions form-field-full">
                         <p>Esta demonstração acadêmica recarrega a página, mas não transmite os dados.</p>
@@ -239,4 +267,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -11,6 +11,10 @@
     --muted: #6d716c;
     --line: #e6e5df;
     --container: 1080px;
+    --dark-mode-color-1: #26261f;
+    --dark-mode-color-2: #1a1a17;
+    --white: #fff;
+
 }
 
 * {
@@ -22,6 +26,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 84px;
+
 }
 
 body {
@@ -32,6 +37,28 @@ body {
     font-size: 15px;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
+
+    &.dark {
+        --green: #2f6b4f;        
+        --green-dark: #3a7d5d;   
+        --green-soft: #1f2e25;   
+        --green-muted: #8fb9a0;  
+        --yellow: #f0b93f;       
+        --yellow-dark: #e7aa2b;
+        --paper: #1a1a17;        
+        --ink: #ecebe4;          
+        --muted: #a3a69f;        
+        --line: #34342d;         
+        --white: #26261f;
+
+        .icone-sol {
+            display: block;
+        }
+
+        .icone-lua {
+            display: none;
+        }
+    }
 }
 
 a {
@@ -58,7 +85,7 @@ a:focus-visible {
 .site-header {
     position: relative;
     z-index: 5;
-    background: #fff;
+    background: var(--white);
 }
 
 .header-content {
@@ -66,6 +93,14 @@ a:focus-visible {
     min-height: 72px;
     align-items: center;
     justify-content: space-between;
+}
+
+.header-box-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .brand {
@@ -92,17 +127,40 @@ a:focus-visible {
     display: flex;
     align-items: center;
     gap: 30px;
-    color: #3e433f;
+    color: var(--muted);
     font-size: 13px;
 }
 
-.primary-navigation > a:not(.button):hover,
+.primary-navigation>a:not(.button):hover,
 .footer-column a:hover,
 .text-link:hover {
     color: var(--yellow-dark);
 }
 
 .menu-toggle {
+    display: none;
+}
+
+ .mode-toggle {
+        display: flex;
+        width: 42px;
+        height: 36px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--yellow-dark);
+        cursor: pointer;
+        transition: transform 0.5s ease-in-out;
+    }
+    .mode-toggle:hover {
+        transform: scale(1.08);
+    }
+
+
+.icone-sol {
     display: none;
 }
 
@@ -132,7 +190,7 @@ a:focus-visible {
 
 .button-green {
     background: var(--green);
-    color: #fff;
+    color: var(--white);
 }
 
 .button-green:hover {
@@ -150,7 +208,7 @@ a:focus-visible {
 
 .button-outline {
     border-color: rgba(255, 255, 255, 0.8);
-    color: #fff;
+    color: var(--white);
 }
 
 .button-outline:hover {
@@ -159,7 +217,7 @@ a:focus-visible {
 
 .hero {
     background: var(--green);
-    color: #fff;
+    color: var(--white);
 }
 
 .hero-content {
@@ -200,7 +258,7 @@ a:focus-visible {
     line-height: 1.08;
 }
 
-.hero-copy > p {
+.hero-copy>p {
     max-width: 470px;
     margin-top: 17px;
     color: #d7e0d9;
@@ -279,7 +337,7 @@ a:focus-visible {
     padding: 20px;
     border: 1px solid var(--line);
     border-radius: 9px;
-    background: #fff;
+    background: var(--white);
 }
 
 .step-icon {
@@ -332,7 +390,7 @@ a:focus-visible {
 }
 
 .machines-section {
-    background: #fff;
+    background: var(--white);
 }
 
 .section-heading-row {
@@ -369,7 +427,7 @@ a:focus-visible {
     overflow: hidden;
     border: 1px solid var(--line);
     border-radius: 10px;
-    background: #fff;
+    background: var(--white);
 }
 
 .machine-visual {
@@ -487,7 +545,7 @@ a:focus-visible {
     padding: 15px;
     border: 1px solid var(--line);
     border-radius: 9px;
-    background: #fff;
+    background: var(--white);
 }
 
 .benefit-card h3 {
@@ -529,7 +587,7 @@ a:focus-visible {
 }
 
 .contact-section {
-    background: #fff;
+    background: var(--white);
 }
 
 .contact-content {
@@ -593,7 +651,7 @@ a:focus-visible {
     padding: 10px 12px;
     border: 1px solid #d8d9d2;
     border-radius: 6px;
-    background: #fff;
+    background: var(--white);
     color: var(--ink);
     font: inherit;
     font-size: 13px;
@@ -648,7 +706,7 @@ a:focus-visible {
 
 .site-footer {
     background: var(--green);
-    color: #fff;
+    color: var(--white);
 }
 
 .footer-main {
@@ -681,7 +739,7 @@ a:focus-visible {
 
 .footer-column h2 {
     margin-bottom: 3px;
-    color: #fff;
+    color: var(--white);
     font-size: 11px;
     font-weight: 700;
 }
@@ -717,9 +775,10 @@ a:focus-visible {
         gap: 5px;
         border: 1px solid var(--line);
         border-radius: 8px;
-        background: #fff;
+        background: var(--white);
         cursor: pointer;
     }
+
 
     .menu-toggle span {
         width: 18px;
@@ -728,6 +787,8 @@ a:focus-visible {
         background: var(--green);
         transition: transform 160ms ease, opacity 160ms ease;
     }
+
+   
 
     .menu-toggle[aria-expanded="true"] span:first-child {
         transform: translateY(7px) rotate(45deg);
@@ -751,7 +812,7 @@ a:focus-visible {
         gap: 0;
         padding: 8px 18px 16px;
         border-top: 1px solid var(--line);
-        background: #fff;
+        background: var(--white);
         box-shadow: 0 12px 18px rgba(20, 52, 37, 0.08);
     }
 
@@ -760,7 +821,7 @@ a:focus-visible {
         flex-direction: column;
     }
 
-    .primary-navigation > a:not(.button) {
+    .primary-navigation>a:not(.button) {
         padding: 12px 2px;
     }
 
@@ -851,6 +912,11 @@ a:focus-visible {
         grid-template-columns: 1fr;
     }
 
+    .mode-toggle {
+        width: 42px;
+        height: 42px;
+    }
+
     .hero-actions .button {
         flex: 1;
         padding-inline: 12px;
@@ -876,6 +942,7 @@ a:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {

@@ -17,3 +17,19 @@ if (menuToggle && navigation) {
         }
     });
 }
+
+
+// Botao Dark Mode
+
+const elemBotaoMode = document.querySelector('.mode-toggle');
+
+const elemBody = document.querySelector('body');
+
+elemBotaoMode.addEventListener('click', () => {
+    elemBody.classList.toggle('dark');
+    elemBotaoMode.setAttribute('aria-pressed', 'true');
+    if (elemBody.classList.contains('dark')) {
+        elemBotaoMode.setAttribute('aria-pressed', 'false');
+    }
+});
+
