@@ -39,16 +39,16 @@ body {
     -webkit-font-smoothing: antialiased;
 
     &.dark {
-        --green: #2f6b4f;        
-        --green-dark: #3a7d5d;   
-        --green-soft: #1f2e25;   
-        --green-muted: #8fb9a0;  
-        --yellow: #f0b93f;       
+        --green: #2f6b4f;
+        --green-dark: #3a7d5d;
+        --green-soft: #1f2e25;
+        --green-muted: #8fb9a0;
+        --yellow: #f0b93f;
         --yellow-dark: #e7aa2b;
-        --paper: #1a1a17;        
-        --ink: #ecebe4;          
-        --muted: #a3a69f;        
-        --line: #34342d;         
+        --paper: #1a1a17;
+        --ink: #ecebe4;
+        --muted: #a3a69f;
+        --line: #34342d;
         --white: #26261f;
 
         .icone-sol {
@@ -141,23 +141,24 @@ a:focus-visible {
     display: none;
 }
 
- .mode-toggle {
-        display: flex;
-        width: 42px;
-        height: 36px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: var(--yellow-dark);
-        cursor: pointer;
-        transition: transform 0.5s ease-in-out;
-    }
-    .mode-toggle:hover {
-        transform: scale(1.08);
-    }
+.mode-toggle {
+    display: flex;
+    width: 42px;
+    height: 36px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--yellow-dark);
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.mode-toggle:hover {
+    transform: scale(1.08);
+}
 
 
 .icone-sol {
@@ -301,6 +302,8 @@ a:focus-visible {
 .section {
     padding-block: 60px;
 }
+
+
 
 .how-section {
     background: var(--paper);
@@ -788,7 +791,7 @@ a:focus-visible {
         transition: transform 160ms ease, opacity 160ms ease;
     }
 
-   
+
 
     .menu-toggle[aria-expanded="true"] span:first-child {
         transform: translateY(7px) rotate(45deg);
@@ -966,7 +969,7 @@ a:focus-visible {
     padding: 38px 45px;
     border-radius: 12px;
     background: var(--green);
-    color: #fff;
+    color: var(--white);
 }
 
 .catalog-banner-content {
@@ -975,7 +978,7 @@ a:focus-visible {
     max-width: 580px;
 }
 
-.catalog-banner-content > span {
+.catalog-banner-content>span {
     display: inline-block;
     margin-bottom: 12px;
     color: var(--yellow);
@@ -1036,7 +1039,7 @@ a:focus-visible {
     padding: 0 15px;
     border: 1px solid var(--line);
     border-radius: 6px;
-    background: #fff;
+    background: var(--white);
     color: var(--muted);
     font-family: inherit;
     font-size: 12px;
@@ -1067,7 +1070,7 @@ a:focus-visible {
     padding: 18px;
     border: 1px solid var(--line);
     border-radius: 9px;
-    background: #fff;
+    background: var(--white);
 }
 
 .catalog-filter {
@@ -1091,7 +1094,7 @@ a:focus-visible {
     padding: 0 10px;
     border: 1px solid var(--line);
     border-radius: 5px;
-    background: #fff;
+    background: var(--white);
     color: var(--ink);
     font-family: inherit;
     font-size: 11px;
@@ -1109,7 +1112,7 @@ a:focus-visible {
     border: 0;
     border-radius: 5px;
     background: var(--green);
-    color: #fff;
+    color: var(--white);
     font-family: inherit;
     font-size: 11px;
     font-weight: 700;
@@ -1169,7 +1172,7 @@ a:focus-visible {
     overflow: hidden;
     border: 1px solid var(--line);
     border-radius: 9px;
-    background: #fff;
+    background: var(--white);
     transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
@@ -1182,7 +1185,7 @@ a:focus-visible {
     position: relative;
     height: 190px;
     overflow: hidden;
-    background: #e9eee8;
+    background: var(--white);
 }
 
 .catalog-image img {
@@ -1203,15 +1206,15 @@ a:focus-visible {
     left: 12px;
     padding: 6px 9px;
     border-radius: 4px;
-    background: #e6f1e8;
-    color: #245d37;
+    background: var(--white);
+    color: var(--green-dark);
     font-size: 9px;
     font-weight: 750;
 }
 
 .catalog-status-warning {
-    background: #fff0d3;
-    color: #8a5a0a;
+    background: var(--white);
+    color: var(--yellow-dark);
 }
 
 .catalog-card-content {
@@ -1237,10 +1240,7 @@ a:focus-visible {
     font-weight: 750;
 }
 
-.catalog-class {
-    color: var(--muted);
-    font-size: 10px;
-}
+
 
 .catalog-card h3 {
     margin-top: 10px;
@@ -1249,6 +1249,8 @@ a:focus-visible {
     font-weight: 750;
     line-height: 1.3;
 }
+
+
 
 .catalog-location {
     margin-top: 5px;
@@ -1326,7 +1328,7 @@ a:focus-visible {
     padding: 0 15px;
     border-radius: 5px;
     background: var(--green);
-    color: #fff;
+    color: var(--white);
     font-size: 11px;
     font-weight: 750;
     transition: 3s;
