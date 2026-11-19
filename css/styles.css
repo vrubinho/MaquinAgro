@@ -137,6 +137,10 @@ a:focus-visible {
     color: var(--yellow-dark);
 }
 
+.footer-column a {
+    color: var(--white);
+}
+
 .menu-toggle {
     display: none;
 }
@@ -727,7 +731,7 @@ a:focus-visible {
 .footer-about p {
     max-width: 260px;
     margin-top: 6px;
-    color: #d4dfd7;
+    color: var(--paper);
     font-size: 12px;
 }
 
@@ -750,7 +754,7 @@ a:focus-visible {
 .footer-bottom {
     padding: 10px 24px;
     border-top: 1px solid rgba(255, 255, 255, 0.13);
-    color: #d4dfd7;
+    color: var(--white);
     font-size: 10px;
     text-align: center;
 }
@@ -1058,7 +1062,7 @@ a:focus-visible {
 .catalog-category.active {
     border-color: var(--green);
     background: var(--green);
-    color: #fff;
+    color: var(--white);
 }
 
 .catalog-filters {
@@ -1095,7 +1099,7 @@ a:focus-visible {
     border: 1px solid var(--line);
     border-radius: 5px;
     background: var(--white);
-    color: var(--ink);
+    color: var(--muted);
     font-family: inherit;
     font-size: 11px;
 }
@@ -1118,6 +1122,11 @@ a:focus-visible {
     font-weight: 700;
     cursor: pointer;
     transition: 3s;
+}
+
+#catalog-search::placeholder {
+    color: var(--muted);
+    opacity: 1;
 }
 
 .catalog-search-button:hover {
